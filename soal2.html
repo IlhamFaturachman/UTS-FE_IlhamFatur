@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal 2</title>
+    <link rel="stylesheet" href="js/jquery-3.6.1.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary py-4">
+            <div class="container">
+                <a class="navbar-brand  text-white" href="#">Lembudy Mart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-warning" type="submit">Search</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active  text-white" aria-current="page" href="index.html">Soal 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active  text-white" aria-current="page" href="soal2.html">Soal 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active  text-white" aria-current="page" href="soal3.html">Soal 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active  text-white" aria-current="page" href="#">Notification</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active  text-white" aria-current="page" href="#">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active  text-white" aria-current="page" href="#">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <center>
+        <div class="container mt-3">
+            <h1>TOKO GATAU</h1>
+        </div>
+        <div class=" row card w-75 mt-5">
+            <div class="card-header">
+                <center>
+                    <h4>
+                        Table Kasir
+                    </h4>
+                </center>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="table-light">
+                            <tr class="text-center">
+                                <th scope="col">No</th>
+                                <th scope="col">Jenis Barang</th>
+                                <th scope="col">Nama Barang</th>
+                                <th scope="col">Harga Satuan</th>
+                                <th scope="col">Jumlah Beli</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="selectJenis">
+                                            <option>Parka's</option>
+                                            <option>Baju</option>
+                                            <option>Kemeja</option>
+                                            <option>Hoodie</option>
+                                            <option>Celna</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="namaBarang"
+                                            placeholder="ex : Aigle Parka">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="hargaBarang" name="hargaBarang">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="jumlahBarang" name="jumlahBarang">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="totalHarga" name="totalHarga"
+                                            readonly>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Parka's</option>
+                                            <option>Baju</option>
+                                            <option>Kemeja</option>
+                                            <option>Hoodie</option>
+                                            <option>Celna</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="namaBarang1"
+                                            placeholder="ex : Aigle Parka">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="hargaBarang1" name="hargaBarang1">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="jumlahBarang1"
+                                            name="jumlahBarang1">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="totalHarga1" name="totalHarga1"
+                                            readonly>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="input-group">
+                        <label for="" class="col-sm-2 col-form-label">TOTAL</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="phoneprepend">Rp.</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="number" class="form-control" id="totalSemua"
+                                aria-describedby="validationTooltipUsernamePrepend" readonly>
+                        </div>
+                    </div>
+                    <div class="input-group mt-4">
+                        <label for="" class="col-sm-2 col-form-label">DISKON</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="diskon"> %. </span>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="number" class="form-control" id="diskon"
+                                aria-describedby="validationTooltipUsernamePrepend" readonly>
+                        </div>
+                    </div>
+                    <div class="input-group mt-4">
+                        <label for="" class="col-sm-2 col-form-label">GRAND TOTAL</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="phoneprepend">Rp.</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="number" class="form-control" id="total"
+                                aria-describedby="validationTooltipUsernamePrepend" readonly>
+                        </div>
+                    </div>
+                    <div class="input-group mt-4">
+                        <label for="" class="col-sm-2 col-form-label">BAYAR</label>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="phoneprepend">Rp.</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="number" class="form-control" id="total"
+                                aria-describedby="validationTooltipUsernamePrepend">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </center>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(
+            function () {
+                $("#hargaBarang, #jumlahBarang, #hargaBarang1, #jumlahBarang1, #diskon").keyup(function () {
+                    var hargaBarang = $("#hargaBarang").val();
+                    var jumlahBarang = $("#jumlahBarang").val();
+                    var hargaBarang1 = $("#hargaBarang1").val();
+                    var jumlahBarang1 = $("#jumlahBarang1").val();
+                    var totalHarga = parseInt(hargaBarang) * parseInt(jumlahBarang);
+                    $("#totalHarga").val(totalHarga);
+                    var totalHarga1 = parseInt(hargaBarang1) * parseInt(jumlahBarang1);
+                    $("#totalHarga1").val(totalHarga1);
+                    var totalSemua = parseInt(totalHarga) + parseInt(totalHarga1);
+                    $("#totalSemua").val(totalSemua);
+                    var totalSemua = parseInt(totalSemua);
+
+                });
+            }
+        )
+    </script>
+</body>
+
+
+</html>
